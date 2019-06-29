@@ -1,0 +1,68 @@
+<!DOCTYPE html> 
+<html> 
+<head>
+    <title> Fullscreen Video </title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<!–– styles ––> 
+<style> 
+ #myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  }
+  
+ #myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+   }
+
+ #myBtn:hover {
+  background: #ddd;
+  color: black;
+   }
+    
+.content {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+   }
+
+    </style>
+</head>
+<body> 
+<video id="myVideo" autoplay muted>
+  <source src="ENTER VIDEO SOURCE" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+    <div class="content">
+
+        <button id="myBtn" onclick="myFunction()">Close</button></div>
+
+<p>Press play and wait for the video to end.</p>
+
+
+
+<script>
+var vid = document.getElementById("myVideo");
+vid.onended = function() {
+  $("#myVideo").fadeOut(800);
+    $("#myBtn").fadeOut(800);
+
+};
+    
+function myFunction() {
+ $("#myVideo").fadeOut(800);
+  $("#myBtn").fadeOut(800);
+
+}
+</script>
+</body> 
+</html>
