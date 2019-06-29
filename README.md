@@ -1,11 +1,10 @@
 # videoloading
-A simple fullscreen video that fades away after video completion. Uses HTML5 Video API.
-
+A simple fullscreen video that fades away after video completion. Uses HTML5 Video API. 
 ## How does it works?
  When user loads into the page, a fullscreen video with sound muted start playing automatically in fullscreen. Then it utilizes HTML 5 Video api to automatically fade away after the video completes.
 
  - User visits website
- - A fullscren video plays
+ - A fullscren video starts playing automatically
  - It fades away after the video completed ( ideally 2-3 secs )
  - Or there is a close button which fades the video without completion
  
